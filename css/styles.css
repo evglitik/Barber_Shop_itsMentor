@@ -1,6 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: sandybrown; /* времено */
+    background-color: rgb(236, 164, 101); /* времено */
 }
 
 /* -----------ПЕРЕМЕННЫЕ------------- */
@@ -106,12 +106,12 @@ body {
 
 .herro-title {
     font-family: Raleway;
-font-weight: 700;
-font-size: 72px;
-line-height: 1.18;
-letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
 
-color: var(--text-color-light-title);
+    color: var(--text-color-light-title);
 }
 
 .herro-sub-title {
@@ -124,3 +124,207 @@ color: var(--text-color-light-title);
 } */
 
 /* ------------------О НАС---------------- */
+
+.about-suo-text {
+    color: var(--text-dark-text);
+}
+
+.about-title {
+    color: var(--text-dark-title);
+}
+
+.abaut-us-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+
+    color: var(--text-dark-title);
+}
+
+.about-btn {
+    /*Будет переделыватся*/
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--text-color-nav);
+    background-color: gray;
+
+    border: none;
+    cursor: pointer;
+
+    padding: 20px 20px;
+}
+
+/* -----------------ПРАЙС---------------- */
+.price-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--text-color-light-text);
+}
+
+.price-title {
+    color: var(--text-color-light-title);
+}
+
+.price-service,
+.price-num {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-light-text);
+}
+
+.price-btn {
+    /*Будет переделыватся*/
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--text-color-nav);
+    background-color: gray;
+
+    border: none;
+    cursor: pointer;
+
+    padding: 20px 20px;
+}
+
+/* -------------------ПОЧЕМУ МЫ?--------------- */
+.argument-num {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--text-dark-title);
+}
+
+.argument-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: var(--text-dark-title);
+}
+
+.argument-sup-text,
+.masters-sup-text,
+.galery-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--text-dark-title);
+}
+
+.argument-title {
+    color: var(--text-dark-title);
+}
+
+.argument-sub-text {
+    color: var(--text-dark-text);
+}
+
+/* -----------------МАСТЕРА------------ */
+.masters-title {
+    color: var(--text-dark-title);
+}
+
+.master-name {
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--text-dark-title);
+}
+
+.master-prof {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--akcent);
+}
+
+/* -----------------FOOTER------------- */
+.adress-tell,
+.adress-text,
+.adress-mail {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-light-text);
+}
+
+.adress-mail {
+    text-decoration: underline;
+}
+
+.time-work {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--text-color-light-title);
+}
+
+.day-work {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-light-text);
+}
+
+.copirate {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--text-color-light-text);
+}
+
+.footer-social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    letter-spacing: 0.2em;
+
+    color: var(--text-social-link);
+}
+/* -----------------Скрытый заголовок-------------- */
+.galery-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
