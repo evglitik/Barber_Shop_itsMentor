@@ -1,0 +1,126 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: sandybrown; /* времено */
+}
+
+/* -----------ПЕРЕМЕННЫЕ------------- */
+:root {
+    --background-color: #ffffff;
+    --text-color-light-title: #ffffff;
+    --text-color-light-text: #9da4bd;
+    --text-color-nav: #ffffff;
+    --text-dark-text: #555555;
+    --text-dark-title: #303030;
+    --text-social-link: #303030;
+    --akcent: #ff6c00;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-dark-title);
+}
+
+/* ----------------НВИГАЦИЯ------------- */
+.navi-textlink,
+.header-tell {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: var(--text-color-nav);
+}
+
+.navi-textlink:hover,
+.header-tell:focus,
+.navi-textlink:focus,
+.header-tell:hover,
+.social-link-herro:hover,
+.social-link-herro:focus,
+.footer-social-link:hover,
+.footer-social-link:focus {
+    color: var(--akcent);
+}
+
+.header-btn {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--text-color-nav);
+    background-color: gray;
+
+    border: none;
+    cursor: pointer;
+
+    padding: 20px 20px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: greenyellow;
+}
+
+/* ----------------HERRO--------------------- */
+.social-link-herro {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--text-social-link);
+}
+
+.title-sections {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.text-per-titles {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.herro-sup-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--text-color-light-text);
+}
+
+.herro-title {
+    font-family: Raleway;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+
+color: var(--text-color-light-title);
+}
+
+.herro-sub-title {
+    color: var(--text-color-light-text);
+}
+
+/* .btn-back,
+.btn-forward {
+
+} */
+
+/* ------------------О НАС---------------- */
