@@ -1,6 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: rgb(236, 164, 101); /* времено */
+    background-color: rgba(190, 161, 138, 0.562); /* времено */
 }
 
 /* -----------ПЕРЕМЕННЫЕ------------- */
@@ -13,7 +13,11 @@ body {
     --text-dark-title: #303030;
     --text-social-link: #303030;
     --akcent: #ff6c00;
+    --margin-text-bottom: 20px;
+    --btn-herro-hover: #FF6C00;
 }
+
+/* ----------CSS RESET-------------- */
 
 .list {
     list-style: none;
@@ -24,7 +28,63 @@ body {
     color: var(--text-dark-title);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+/* ------CONTAINER--------------- */
+.container {
+    outline: solid blue;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}
+
 /* ----------------НВИГАЦИЯ------------- */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+
+.navi-item + .navi-item {
+    margin-left: 40px;
+}
+
+.header-connect {
+    /* align-items: center; */
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
 .navi-textlink,
 .header-tell {
     font-weight: 600;
@@ -47,6 +107,15 @@ body {
 }
 
 .header-btn {
+    margin-left: 40px;
+    /* padding: 20px 20px; */
+    height: 40px;
+    min-width: 160px;
+    border: 1px solid #FF6C00;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+
     font-family: Open Sans;
     font-weight: 600;
     font-size: 12px;
@@ -55,20 +124,33 @@ body {
     text-transform: uppercase;
 
     color: var(--text-color-nav);
-    background-color: gray;
-
-    border: none;
-    cursor: pointer;
-
-    padding: 20px 20px;
+    background-color: transparent;
 }
 
 .header-btn:hover,
 .header-btn:focus {
-    background-color: greenyellow;
+    background-color: var(--btn-herro-hover);
 }
 
 /* ----------------HERRO--------------------- */
+.herro-container {
+    display: flex;
+}
+
+.herro-right {
+    background-color: rgb(39, 102, 39);
+    flex-grow: 1;
+    padding: 272px 0 206px 96px;
+}
+
+.youtinst-list {
+    min-width: 93px;
+}
+
+.btn-herro {
+    margin-left: auto;
+}
+
 .social-link-herro {
     font-weight: 600;
     font-size: 11px;
@@ -120,20 +202,51 @@ body {
 
 /* .btn-back,
 .btn-forward {
-
-} */
+    margin-left: auto;
+/* }  */
 
 /* ------------------О НАС---------------- */
+.about-container {
+    display: flex;
+}
+
+.about-imglist {
+    display: flex;
+}
+
+.about-img+.about-img {
+ margin-left: 30px;
+}
+
+.about-text-right {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.about-us {
+    padding-top: 138px;
+    padding-bottom: 121px;
+}
 
 .about-suo-text {
+    margin-bottom: var(--margin-text-bottom);
+
     color: var(--text-dark-text);
 }
 
 .about-title {
+    margin-bottom: var(--margin-text-bottom);
+
     color: var(--text-dark-title);
 }
 
+.about-sub-text {
+    margin-bottom: var(--margin-text-bottom);
+}
+
 .abaut-us-text {
+    margin-bottom: 40px;
+
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
@@ -143,6 +256,14 @@ body {
 
 .about-btn {
     /*Будет переделыватся*/
+    /* padding: 20px 20px; */
+    height: 40px;
+    min-width: 160px;
+    border: 1px solid #FF6C00;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+
     font-family: Open Sans;
     font-weight: 600;
     font-size: 12px;
@@ -150,17 +271,19 @@ body {
     letter-spacing: 0.09em;
     text-transform: uppercase;
 
-    color: var(--text-color-nav);
-    background-color: gray;
-
-    border: none;
-    cursor: pointer;
-
-    padding: 20px 20px;
+    color: var(--text-dark-title);
+    background-color: transparent;
 }
 
 /* -----------------ПРАЙС---------------- */
+.prices {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .price-text {
+    margin-bottom: var(--margin-text-bottom);
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -171,6 +294,8 @@ body {
 }
 
 .price-title {
+    margin-bottom: 44px;
+
     color: var(--text-color-light-title);
 }
 
@@ -202,6 +327,11 @@ body {
 }
 
 /* -------------------ПОЧЕМУ МЫ?--------------- */
+.arguments {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .argument-num {
     font-weight: 700;
     font-size: 42px;
@@ -233,7 +363,13 @@ body {
     color: var(--text-dark-title);
 }
 
+.argument-sup-text {
+    margin-bottom: var(--margin-text-bottom);
+}
+
 .argument-title {
+    margin-bottom: var(--margin-text-bottom);
+
     color: var(--text-dark-title);
 }
 
@@ -242,11 +378,36 @@ body {
 }
 
 /* -----------------МАСТЕРА------------ */
+.masters-list {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+    flex-wrap: wrap;
+}
+
+.master-item {
+    width: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.masters-sup-text {
+    margin-bottom: var(--margin-text-bottom);
+}
+
 .masters-title {
+    margin-bottom: 44px;
     color: var(--text-dark-title);
 }
 
 .master-name {
+    margin-bottom: 8px;
+
     font-size: 18px;
     line-height: 1.38;
     text-align: center;
@@ -264,7 +425,47 @@ body {
     color: var(--akcent);
 }
 
+/* ---------------------GALERRY-------------- */
+.galery-text {
+    margin-bottom: 44px;
+}
+
+/* .galery-container {
+    background-color: chartreuse;
+} */
+
+.galery-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    flex-wrap: wrap;
+}
+
+
+.galery-img {
+    min-width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.galery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+/* -------------PRE_FOOTER-------------- */
+.pre-footer {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    border-color: burlywood;
+}
+
 /* -----------------FOOTER------------- */
+.footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
 .adress-tell,
 .adress-text,
 .adress-mail {
